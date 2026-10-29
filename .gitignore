@@ -1,0 +1,25 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+
+# Secrets: never upload your API key
+.env
+.env.local
+.env.*.local
+
+# Vercel local folder
+.vercel
+
+# Logs and system files
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage
+
+# Personal interview notes (kept on my computer, not uploaded)
+QA.md
