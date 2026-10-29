@@ -1,0 +1,35 @@
+/* Load Tailwind CSS */
+@import "tailwindcss";
+
+/* Design tokens: one font and a calm light + green palette */
+@theme {
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --color-page: #f2f6f3;        /* page background */
+  --color-ink: #16271f;         /* main text */
+  --color-muted: #5d7066;       /* secondary text */
+  --color-line: #dbe5df;        /* borders */
+  --color-primary: #2f7d57;     /* buttons and highlights */
+  --color-gain: #2f7d57;        /* positive result */
+  --color-loss: #b84a45;        /* negative result */
+  --animate-floaty: floaty 6s ease-in-out infinite;
+  --animate-rise: rise 0.7s ease-out both;
+  --animate-pop: pop 0.15s ease-out both;
+  @keyframes floaty { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes pop { from { opacity: 0; transform: translateY(-4px) scale(0.98); } to { opacity: 1; transform: none; } }
+}
+
+/* Tabular numbers keep digits the same width, so tables line up neatly */
+body { background: var(--color-page); color: var(--color-ink); font-family: var(--font-sans); font-variant-numeric: tabular-nums; }
+
+/* Clear outline for keyboard users */
+:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+
+/* Smooth scrolling for the navigation links; scroll-padding keeps titles below the sticky navbar */
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+/* Soft dot pattern for the hero background */
+.dots { background-image: radial-gradient(rgba(22, 39, 31, 0.08) 1.2px, transparent 1.2px); background-size: 22px 22px; }
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
