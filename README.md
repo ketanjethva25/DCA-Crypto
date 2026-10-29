@@ -9,7 +9,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?logo=vercel&logoColor=white)
 
-[**Live Demo**](ADD-YOUR-VERCEL-LINK-HERE) · [Report a Bug](../../issues)
+[**Live Demo**](https://dca-crypto25.vercel.app/) · [Report a Bug](../../issues)
 
 </div>
 
