@@ -1,6 +1,6 @@
 <div align="center">
 
-# StackSIP: Monthly Crypto Investment (DCA) Calculator
+# DCA Crypto: Monthly Crypto Investment (DCA) Calculator
 
 **See what a regular weekly or monthly crypto investment would be worth today.**
 
